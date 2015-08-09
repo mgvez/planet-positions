@@ -7,7 +7,7 @@ Computes planet positions, plus the Earth's Moon, on any given UTC time.
 Include planet-positions.js (or planet-positions.min.js), then call 
 
 ```javascript
-var planets = window.lagrange.planet_positions(new Date());
+var planets = window.lagrange.planet_positions.getPositions(new Date());
 ```
 
 An array of objects will be returned, one for each planet, with a Three.js Vector3 as the planet's position. If you also want to receive the planet's velocity as a Vector3, specify a second parameter set to true.
